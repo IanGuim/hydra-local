@@ -1,0 +1,18 @@
+osc(10,3)
+.rotate(180, 3)
+.color(2,5)
+.add(shape(3,0.1,0.2).color(20).rotate(180,2))
+.out()
+
+noise(30, 4, 8)
+.add(voronoi(23,9,10))
+.color(0,1)
+.modulateScale(osc(2,2,2).kaleid(50).scale(0.5),16,0)
+.out()
+
+noise(30,4,8)
+.add(voronoi(23,9,20))
+.color(0,1)
+.modulateScale(osc(2,2,2).kaleid(50).scale(0.5),16,0)
+.add(shape(3,0.1,0.4).rotate(180,20).repeat(20,50))
+.out()
